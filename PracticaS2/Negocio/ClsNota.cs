@@ -9,7 +9,7 @@ namespace PracticaS2.Negocio
     public class ClsNota{
         public String Verificador(Nota nota)
         {
-            if (nota.dat >= 6){
+            if (nota.dat >= 6 && nota.dat < 11){
                 return $"Usted aprobó la materia con una nota de {nota.dat}";
             }
             else if (nota.dat <= 6){
